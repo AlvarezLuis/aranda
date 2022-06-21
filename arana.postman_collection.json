@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "5cdcd7bc-561f-42b2-a592-1b01e4e64725",
+		"name": "arana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11816485"
+	},
+	"item": [
+		{
+			"name": "GetAll product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "app",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44333/Product?PageNumber=1&PageSize=2&Name=omi&Description=celular&Category=tecno",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Product"
+					],
+					"query": [
+						{
+							"key": "PageNumber",
+							"value": "1"
+						},
+						{
+							"key": "PageSize",
+							"value": "2"
+						},
+						{
+							"key": "Name",
+							"value": "omi"
+						},
+						{
+							"key": "Description",
+							"value": "celular"
+						},
+						{
+							"key": "Category",
+							"value": "tecno"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"nevera\",\r\n    \"Description\": \"soy una descripcion de la nevera\",\r\n    \"IdCategory\": 2,\r\n    \"UrlImage\": \"soy una url de nevera\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1002,\r\n    \"Name\": \"producto editado\",\r\n    \"Description\": \"soy una descripcion del producto 1\",\r\n    \"IdCategory\": 1,\r\n    \"UrlImage\": \"soy una url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1002,\r\n    \"Name\": \"producto editado\",\r\n    \"Description\": \"soy una descripcion del producto 1\",\r\n    \"IdCategory\": 1,\r\n    \"UrlImage\": \"soy una url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/Category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/Category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ferreteria\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/Category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Categories",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1002,\r\n        \"name\": \"Ferreteria edit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/Category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"Category"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
